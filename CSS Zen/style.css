@@ -16,30 +16,85 @@
 }
 
 body { 
-	font: 1.2em/1.5 Arial, Helvetica, sans-serif;
+	font: 1rem/1.8 Arial, Helvetica, sans-serif;
+}
+
+/*FIRST PAGE*/
+.summary a{
+	color: white;
+}
+
+.summary a:hover{
+	color:#6abe5e;
+}
+
+.first_page{
+	background-image:url("bg-first-s.jpg");
+	background-size:cover;
+	height: 100vh;
+	background-position: center;
+	padding: 1rem;
 
 }
 
-h1, h2{
-	font-family: 'Poppins', sans-serif;
-	
+.intro{
+	margin-top: 10vh;
+	color: white;
+	text-align: center;
 }
 
+header{
+	font: .8rem/.9 'Poppins', sans-serif;
+	padding-bottom: 10vh;	
+}
+
+header h1{
+	font-size: 3rem;
+}
+
+header h2{
+	margin:2em;
+}
+
+.summary{
+	text-align: left;
+	margin:0 auto;
+	text-align: center;
+	padding-bottom: 15vh;
+}
+
+/*SECOND PAGE*/
+.second_page{
+	background-color: black;
+	height: 100vh;
+	color:white;
+}
+
+.second_page h3{
+	font: 2.5rem/.9 'Poppins', sans-serif;
+	padding: 2rem;
+
+}
+
+.preamble{
+	padding: 2rem;
+	font-size: .9rem;
+	text-align: justify;
+}
+
+.preamble p:first-line{
+	color:#407539;
+
+}
+
+/*FOR LARGER SCREENS */
+@media screen and (min-width:40em){
 /*first page */
 .first_page{
 	/*Background image*/
-	background-image: url("first_background.jpg");
-	background-size: cover;
-	height: 100vh;
-	background-position: center;
-	color: #6b6b6b;
-	display: flex;
-	align-items: center;
-}
-
-#zen-intro{
-	display: flex;
-	flex-flow: column wrap
+	background-image: url("bg-first-l.jpg");
+	text-align: left;
+	justify-content: flex-start;
 }
 
 header{
@@ -50,20 +105,13 @@ header{
 
 header h1{
 	font-size: 4rem;
-	font-weight: bold
+	font-weight: bold;
 }
 
 .summary{
-	margin:2rem;
+	margin:3rem;
 	width: 45vw;
 	font-size: 1rem;
 }
-
-.summary a{
-	text-decoration: none;
-	color: green;
 }
 
-.summary a:hover{
-	color:#6abe5e;
-}
