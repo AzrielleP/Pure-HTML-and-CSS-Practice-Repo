@@ -8,12 +8,12 @@ html{
 
 body{
     margin:0 auto;
-    padding: 0 5em;
+
 }
 
 header{
-    background-color: rgba(168,168,168,.5);
-    padding: 0;
+    padding: .5em 2.5em;
+    
 }
 
 .header_link{
@@ -22,17 +22,22 @@ header{
 
 header a{
     text-decoration: none;
-    color: white;
+    color: rgb(54, 54, 54);
     padding: 1em 2em;
 }
 
+
+
 header a:hover{
-    color: rgb(102, 102, 102);
+    color: rgb(175, 175, 175);
 }
 
-header, .header_link{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
 
+
+@media screen and (min-width: 40em){
+    header, .header_link{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
