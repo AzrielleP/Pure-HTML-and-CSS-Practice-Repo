@@ -16,7 +16,12 @@
 }
 
 body { 
-	font: 1rem/1.8 Arial, Helvetica, sans-serif;
+	font: 1rem/1.8 'Roboto', sans-serif;
+}
+
+h3{
+	font: 2.4rem/.9 'Poppins', sans-serif; ;
+	padding: 2rem;
 }
 
 /*FIRST PAGE*/
@@ -57,7 +62,6 @@ header h2{
 }
 
 .summary{
-	text-align: left;
 	margin:0 auto;
 	text-align: center;
 	padding-bottom: 15vh;
@@ -70,22 +74,37 @@ header h2{
 	color:white;
 }
 
-.second_page h3{
-	font: 2.5rem/.9 'Poppins', sans-serif;
-	padding: 2rem;
-
-}
-
 .preamble{
 	padding: 2rem;
-	font-size: .9rem;
+	font-size: 2.2vh;
 	text-align: justify;
 }
 
 .preamble p:first-line{
-	color:#407539;
-
+	color:#449938;
 }
+
+/*Selecting a design */
+.third_page li{
+	margin: 1rem;
+	list-style: none;
+	list-style-position: inside;
+	color: black;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.third_page a{
+	text-decoration: none;
+}
+
+.third_page a:active{
+	color: #6abe5e;
+}
+
+
+
+
 
 /*FOR LARGER SCREENS */
 @media screen and (min-width:40em){
