@@ -29,49 +29,53 @@ h3{
 	color: white;
 }
 
-.summary a:hover{
-	color:#6abe5e;
+.summary a:active{
+	color:#68B2A0;
 }
 
 .first_page{
-	background-image:url("bg-first-s.jpg");
+	background: linear-gradient(135deg, rgba(44,105,117,1) 0%,rgba(104,178,160,1) 100%);
 	background-size:cover;
 	height: 100vh;
 	background-position: center;
 	padding: 1rem;
+	text-align: left;
 
 }
 
 .intro{
 	margin-top: 10vh;
 	color: white;
-	text-align: center;
 }
 
 header{
-	font: .8rem/.9 'Poppins', sans-serif;
-	padding-bottom: 10vh;	
+	font-family:'Poppins', sans-serif;
+	padding-bottom: 10vh;
 }
 
 header h1{
-	font-size: 3rem;
+	font-size: 4rem;
+	line-height: 1em;
 }
 
 header h2{
-	margin:2em;
+	margin:2em 0;
 }
 
 .summary{
 	margin:0 auto;
-	text-align: center;
 	padding-bottom: 15vh;
 }
 
 /*SECOND PAGE*/
 .second_page{
-	background-color: black;
-	height: 100vh;
-	color:white;
+	height: 95vh;
+	color: black;
+}
+
+.second_page h3{
+	color: #2c6975;
+	font-size: 2.5em;
 }
 
 .preamble{
@@ -81,17 +85,28 @@ header h2{
 }
 
 .preamble p:first-line{
-	color:#449938;
+	font-weight: bold;
 }
 
 /*Selecting a design */
+
+.third_page{
+	background: linear-gradient(135deg, rgba(205,224,201,1) 0%,rgba(44,105,117,1) 100%);
+	font-size: 1em;
+	text-align: center;
+	padding: .5em;
+}
+
+.third_page h3{
+	color:white;
+}
+
 .third_page li{
 	margin: 1rem;
 	list-style: none;
-	list-style-position: inside;
-	color: black;
+	border: 1px solid white;
+	height: 15vh;
 	padding: 1rem;
-	font-size: 1.5rem;
 }
 
 .third_page a{
@@ -99,11 +114,27 @@ header h2{
 }
 
 .third_page a:active{
-	color: #6abe5e;
+	color: #68B2A0;
 }
 
+.third_page .design-name{
+	font-size: 1.3rem;
+	padding: 0;
+	font-weight: bold;
+	color: #2C6975;
+}
 
+.third_page .designer-name{
+	font-size: 1rem;
+	padding: 0;
+	font-weight: bold;
+	color: #e0ecde;
+}
 
+.third_page .view-all{
+	font-size: 1.5rem;
+	color: white;
+}
 
 
 /*FOR LARGER SCREENS */
