@@ -78,7 +78,7 @@ header h2{
 	font-size: 2.5em;
 }
 
-.preamble{
+.preamble, .main-supporting{
 	padding: 2rem;
 	font-size: 2.2vh;
 	text-align: justify;
@@ -144,6 +144,24 @@ li.view-all{
 	text-align: center;
 }
 
+/*fourth page*/
+.main-supporting{
+	padding: 2rem;
+	font-size: 2.2vh;
+	text-align: justify;
+}
+
+.main-supporting h3{
+	text-align: left;
+	padding: 1rem 0 1rem 0;
+	border-bottom: 2px solid #2c6975;
+	border-top: 2px solid #2c6975;
+}
+
+.main-supporting p{
+	padding-top: 1em;
+	text-indent: 1rem;
+}
 
 /*FOR LARGER SCREENS */
 @media screen and (min-width:40em){
