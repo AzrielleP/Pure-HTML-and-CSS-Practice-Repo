@@ -8,259 +8,240 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 /* Common */
-*{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body { 
-	font: 1rem/1.8 'Roboto', sans-serif;
+body {
+  font: 1rem/1.8 "Roboto", sans-serif;
 }
 
-h3{
-	font: 2.3rem/.9 'Poppins', sans-serif; ;
-	padding: 2rem;
-	text-align: left;
+h1 {
+  font-size: 4rem;
+  line-height: 1em;
 }
 
-.summary a, .requirements a{
-	color: white;
+h2 {
+  margin: 2em 0;
 }
 
-.preamble, .main-supporting, .requirements{
-	padding: 2rem;
-	font-size: 2.2vh;
-	text-align: justify;
+h3 {
+  font: 2.3rem/0.9 "Poppins", sans-serif;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  text-align: left;
 }
 
-.main-supporting p, .requirements p{
-	padding-top: 1em;
-	text-indent: 1rem;
+.summary a,
+.requirements a {
+  color: white;
 }
 
+.main-supporting,
+.preamble,
+.requirements {
+  font-size: 2.2vh;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.main-supporting p,
+.requirements p {
+  padding-top: 1em;
+  text-indent: 1rem;
+}
 
 /*LANDING*/
-.summary a:active{
-	color:#68B2A0;
+.summary a:active {
+  color: #68b2a0;
 }
 
-.landing{
-	background:url(bg-first-s.jpg);
-	background-size:cover;
-	height: 100vh;
-	background-position: left;
-	padding: 1rem;
-	text-align: left;
-
+.landing {
+  background-position: left;
+  background-size: cover;
+  background: url(bg-first-s.jpg);
+  height: 100vh;
+  padding: 1rem;
+  text-align: left;
 }
 
-.intro{
-	margin-top: 10vh;
-	color: white;
+.intro {
+  color: white;
+  margin-top: 10vh;
 }
 
-header{
-	font-family:'Poppins', sans-serif;
-	padding-bottom: 2vh;
+header {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2vh;
 }
 
-header h1{
-	font-size: 4rem;
-	line-height: 1em;
-}
-
-header h2{
-	margin:2em 0;
-}
-
-.summary{
-	margin:0 auto;
-	position: absolute;
-	bottom: 3vh;
+.summary {
+  bottom: 3vh;
+  margin: 0 auto;
+  position: absolute;
 }
 
 /*SECOND-PART*/
-.article-1{
-	height: fit-content;
-	color: black;
+.article-1 {
+  color: black;
+  height: fit-content;
 }
 
-.article-1 h3{
-	color: #2c6975;
-}
-
-.preamble p:first-line{
-	font-weight: bold;
+.preamble p:first-line {
+  font-weight: bold;
 }
 
 /*selecting a design*/
-.select-design{
-	padding-left: 2rem;
+.select-design {
+  padding-left: 2rem;
 }
 
-.select-design ul{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1em;
-	align-items: center;
-	list-style-type: none;
+.select-design ul {
+  align-items: center;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
 }
 
-.select-design li{
-	text-align: left;
-	margin: 0;
-	padding-left: 1rem;
-	border-left: 5px solid #2c6975;
+.select-design li {
+  border-left: 5px solid #2c6975;
+  margin: 0;
+  padding-left: 1rem;
+  text-align: left;
 }
 
-.select-design a{
-	text-decoration: none;
+.select-design a {
+  text-decoration: none;
 }
 
-.select-design a:active{
-	color: #68B2A0;
+.select-design a:active {
+  color: black;
 }
 
-.select-design .design-name{
-	font-size: 1rem;
-	padding: 0;
-	font-weight: bold;
-	color: rgb(31, 73, 82);
-	line-height: .3;
+.select-design .design-name {
+  color: rgb(31, 73, 82);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.3;
+  padding: 0;
 }
-.select-design .designer-name{
-	font-size: .8rem;
-	padding: 0;
-	font-weight: bold;
-}
-
-.view-all a{
-	color: #2C6975;
-	text-align: center;
+.select-design .designer-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0;
+  color: #68b2a0
 }
 
-.select-design .view-all{
-	border:none;
-	font-weight: bold;
+.view-all a {
+  color: #2c6975;
+  text-align: center;
+}
+
+.select-design .view-all {
+  border: none;
+  font-weight: bold;
 }
 
 /*third-part*/
-.main-supporting h3{
-	margin-top: 1em;
-	padding: 1rem 0 1rem 0;
+
+.main-supporting a {
+  color: #2c6975;
+  text-decoration: none;
 }
 
-.main-supporting a{
-	text-decoration: none;
-	color: #2c6975;
-}
-
-.main-supporting a:active{
-	color: #cde0c9;
+.main-supporting a:active {
+  color: #cde0c9;
 }
 
 /*fifth page */
-.requirements{
-	background: linear-gradient(135deg, rgba(104,178,160,1) 0%,rgba(44,105,117,1) 100%);
-	color: white;
+.requirements {
+  background: linear-gradient(
+    135deg,
+    rgba(104, 178, 160, 1) 0%,
+    rgba(44, 105, 117, 1) 100%
+  );
+  color: white;
 }
 
-.requirements h3{
-	margin-top: .5em;
-	padding: 0 0 1rem 0;
-	text-decoration: underline;
-
-}
-
-.requirements a:active{
-	color:#cde0c9;
+.requirements a:active {
+  color: #cde0c9;
 }
 
 /*footer*/
-footer{
-	border-top: 5px solid white;
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 1rem;
+footer {
+  background-color: black;
+  border-top: 5px solid white;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-footer a{
-	text-decoration: none;
-	color: #68B2A0
+footer a {
+  color: #68b2a0;
+  text-decoration: none;
 }
 
-footer h3{
-	text-align: center;
+footer ul {
+  list-style: none;
 }
-
-footer ul{
-	list-style: none;
-}
-
 
 /*FOR LARGER SCREENS */
-@media screen and (min-width:70em){
+@media screen and (min-width: 70em) {
+  /*second-part*/
+  .second-part {
+    display: flex;
+    padding: 1rem 10rem 0 10rem;
+  }
 
-	/*second-part*/
-	.second-part{
-		display: flex;
-		padding: 1rem 10rem 0 10rem;
-		
-	}
+  .article-1 {
+    flex: 1;
+  }
 
-	.article-1{
-		flex:1;
-	}
+  .select-design {
+    flex: 1;
+    padding-left: 5rem;
+  }
 
-	.select-design{
-		flex:1;
-		padding-left: 5rem;
-	}
-	
+  .select-design .designer-name a:hover {
+    color: #cde0c9;
+  }
 
+  .select-design .view-all {
+    border: none;
+    font-weight: bold;
+  }
 
-	.select-design h3{
-		color:#2c6975;
-		padding-left:0;
-	}
+  /*third-part*/
+  .main-supporting {
+    padding-bottom: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 
-	.select-design .designer-name a:hover{
-		color:#cde0c9;
-	}
+  .explanation,
+  .participation,
+  .benefits {
+    padding-right: 10rem;
+  }
 
-	.select-design .view-all{
-		border:none;
-		font-weight: bold;
-	}
+  .requirements {
+    padding-left: 10rem;
+    padding-right: 20rem;
+    padding-top: 2rem;
+  }
 
-	/*third-part*/
-	.main-supporting{
-		padding: 0rem 10rem 2rem 10rem;
-	}
+  /*footer*/
+  footer {
+    align-items: center;
+    display: flex;
+    padding-left: 3rem;
+    text-align: left;
+  }
 
-	.explanation, .participation, .benefits{	
-		padding-right: 10rem;
-	}
-
-	.requirements{
-		padding-top: 2rem;
-		padding-right: 20rem;
-		padding-left: 10rem;
-
-	}
-
-	/*footer*/
-	footer{
-		display: flex;
-		text-align: left;
-		padding-left: 3rem;
-		align-items: center;
-	}
-
-	.zen-resources{
-		flex:1;
-	}
+  .zen-resources {
+    flex: 1;
+  }
 }
-
