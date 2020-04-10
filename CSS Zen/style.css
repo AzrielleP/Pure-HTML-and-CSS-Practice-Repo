@@ -41,10 +41,6 @@ h3{
 
 
 /*LANDING*/
-abbr{
-	text-decoration: none;
-}
-
 .summary a:active{
 	color:#68B2A0;
 }
@@ -86,7 +82,7 @@ header h2{
 
 /*SECOND-PART*/
 .article-1{
-	height: 95vh;
+	height: fit-content;
 	color: black;
 }
 
@@ -99,6 +95,25 @@ header h2{
 }
 
 /*selecting a design*/
+.select-design{
+	padding-left: 2rem;
+}
+
+.select-design ul{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	align-items: center;
+	list-style-type: none;
+}
+
+.select-design li{
+	text-align: left;
+	margin: 0;
+	padding-left: 1rem;
+	border-left: 5px solid #2c6975;
+}
+
 .select-design a{
 	text-decoration: none;
 }
@@ -112,9 +127,8 @@ header h2{
 	padding: 0;
 	font-weight: bold;
 	color: rgb(31, 73, 82);
-	line-height: .5;
+	line-height: .3;
 }
-
 .select-design .designer-name{
 	font-size: .8rem;
 	padding: 0;
@@ -126,47 +140,10 @@ header h2{
 	text-align: center;
 }
 
-@media screen and (max-width:49em){
-	/*Selecting a design */
-	.select-design{
-		background: linear-gradient(135deg, rgba(205,224,201,1) 0%,rgba(44,105,117,1) 100%);
-		font-size: 1em;
-		text-align: center;
-		padding: .5em;
-		
-	}
-
-	.select-design h3{
-		color:white;
-	}
-
-	.select-design li{
-		margin: 1rem;
-		list-style: none;
-		border: 1px solid white;
-		height: 10vh;
-		padding: .4rem;
-		margin: auto;
-	}
-
-	.select-design .designer-name{
-		color:white;
-	}
-
-	li.view-all{
-	font-size: 1rem;
-	background-color: #e0ecde;
-	height: 5vh;
-	padding: .2rem;
-	}
-
-	/*third-part*/
-	.main-supporting h3{
-		border-bottom: 2px solid #2c6975;
-		border-top: 2px solid #2c6975;
-	}
+.select-design .view-all{
+	border:none;
+	font-weight: bold;
 }
-
 
 /*third-part*/
 .main-supporting h3{
@@ -224,18 +201,17 @@ footer ul{
 
 
 /*FOR LARGER SCREENS */
-@media screen and (min-width:50em){
+@media screen and (min-width:70em){
 
 	/*second-part*/
 	.second-part{
 		display: flex;
-		padding: 1rem 10rem 2rem 10rem;
+		padding: 1rem 10rem 0 10rem;
 		
 	}
 
 	.article-1{
 		flex:1;
-		height: 90vh;
 	}
 
 	.select-design{
@@ -243,20 +219,7 @@ footer ul{
 		padding-left: 5rem;
 	}
 	
-	.select-design ul{
-		display:grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 1em;
-		align-items: center;
-		list-style-type: none;
-	}
 
-	.select-design li{
-		text-align: left;
-		margin: 0;
-		padding-left: 1rem;
-		border-left: 5px solid #2c6975;
-	}
 
 	.select-design h3{
 		color:#2c6975;
@@ -273,18 +236,18 @@ footer ul{
 	}
 
 	/*third-part*/
-	.main-supporting, .requirements{
+	.main-supporting{
 		padding: 0rem 10rem 2rem 10rem;
-		background-color:
 	}
 
-	.explanation, .participation, .benefits{
-		
+	.explanation, .participation, .benefits{	
 		padding-right: 10rem;
 	}
 
 	.requirements{
-		padding: 2rem 10rem;
+		padding-top: 2rem;
+		padding-right: 20rem;
+		padding-left: 10rem;
 
 	}
 
@@ -299,6 +262,5 @@ footer ul{
 	.zen-resources{
 		flex:1;
 	}
-
 }
 
