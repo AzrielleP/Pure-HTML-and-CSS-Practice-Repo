@@ -28,9 +28,8 @@ body{
 }
 
 .logo:active{
-    
+    -webkit-tap-highlight-color: transparent;
 }
-
 .menu-wrap .burger-toggle{
     position: absolute;
     top:0;
