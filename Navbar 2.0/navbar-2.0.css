@@ -10,7 +10,7 @@ body{
 }
 
 /*Arrow icon*/
-i{
+.arrow-down{
     border: solid black;
     display: inline-block;
     padding: 7px;
@@ -19,6 +19,7 @@ i{
     transform:rotate(-45deg);
 }
 
+/*Logo*/
 .logo{
     background: url("moomm-logo.png") no-repeat center center/cover;
     display: inline-block;
@@ -38,9 +39,9 @@ i{
     justify-content: space-between;
     height: 60px;
     width: 100vw;
-    /*overflow: hidden;*/
 }
 
+/*Preparing the burger*/
 .navbar-wrap .burger-toggle{
     position: absolute;
     top: 0;
@@ -105,7 +106,7 @@ i{
 
 }
 
-/* Show Menu */
+/* Show the Menu */
 .navbar-wrap .menu-wrap{
     background-color: #FFF;
     position: absolute;
@@ -142,7 +143,7 @@ i{
     transition: 0.3s ease-in-out;
 }
 
-/*Effects when clicked*/
+/*Effect when clicked*/
 .menu-wrap div .item input:checked ~ .arrow-down{
     transform:rotate(45deg);
     border-color: #4195eb;
@@ -151,9 +152,6 @@ i{
 .menu-wrap div .item input:checked ~ label{
     color:#4195eb;
 }
-
-
-
 
 /*Inside Menu Layout*/
 .navbar-wrap .menu-wrap div ul li{
@@ -172,6 +170,34 @@ i{
     -webkit-tap-highlight-color: transparent;
 
 }
+
+/* Search bar */
+.searchContainer {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    right: 70px;
+    z-index: 2;
+  }
+
+  .searchBox{
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+  
+  }
+
+  .search-icon{
+      height: 20px;
+      width: 20px;
+  }
+
+  .searchContainer input:focus{
+    outline: none;
+  }
+
 
     
 
