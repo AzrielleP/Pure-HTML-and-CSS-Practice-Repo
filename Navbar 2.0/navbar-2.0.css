@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+/*Arrow icon*/
+i{
+    border: solid black;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    border-width: 0 2px 2px 0;
+    transform:rotate(45deg);
+}
+
+/*.logo{
+    background: url("moo-logo.png") no-repeat cover cover/center;
+    display: inline-block;
+    z-index:2;
+    height:60px;
+    width:200px;
+} */
+
+.navbar-wrap{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+    /*overflow: hidden;*/
+}
+
+.navbar-wrap .burger-toggle{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 2;
+    width: 60px;
+    height:60px;
+    opacity:0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-wrap .burger{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Hamburger Icon Creation*/
+.navbar-wrap .burger > div{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    
+}
+
+.navbar-wrap .burger > div:before,
+.navbar-wrap .burger > div:after{
+    content:'';
+    width:100%;
+    height:3px;
+    top: -10px;
+    background: inherit;
+    position:absolute;
+}
+
+.navbar-wrap .burger > div:after{
+    top: 10px;
+}
+
+/*Hamburger icon becomes X*/
+.navbar-wrap .burger-toggle:checked + .burger > div:before,
+.navbar-wrap .burger-toggle:checked + .burger > div:after{
+    transform:rotate(-90deg);
+    top:0;
+}
+
+.navbar-wrap .burger-toggle:checked + .burger > div{
+    transform:rotate(-45deg);
+    top:0;
+
+}
+
+/* Show Menu */
+.navbar-wrap .menu-wrap{
+    background-color: rgba(41, 79, 117, 0.75);
+    position: absolute;
+    top:0;
+    right: -100vw;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: 0.5s;
+    padding: 2rem;
+    font-size: 2em;
+
+}
+
+.navbar-wrap .burger-toggle:checked ~ .menu-wrap{
+    right:0;
+    transition: 0.5s;
+}
+
+/* Creating drop down lists */
+
+
+/*Menu Layout*/
+.navbar-wrap .menu-wrap div ul li{
+    list-style-type: none;
+    padding: .5rem;
+}
+
+.navbar-wrap .menu-wrap div ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-wrap .menu-wrap div ul li a:active{
+    color: rgb(37, 70, 160);
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+
+    
+
