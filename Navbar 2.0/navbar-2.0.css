@@ -13,10 +13,10 @@ body{
 i{
     border: solid black;
     display: inline-block;
-    padding: 8px;
-    margin: 5px;
+    padding: 7px;
+    margin: 3px;
     border-width: 0 2px 2px 0;
-    transform:rotate(45deg);
+    transform:rotate(-45deg);
 }
 
 /*.logo{
@@ -115,7 +115,7 @@ i{
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     transition: 0.5s;
-    padding: 2rem;
+    padding: 2.5rem;
     font-size: 2em;
 
 }
@@ -125,13 +125,33 @@ i{
     transition: 0.5s;
 }
 
-/* Creating drop down lists */
+/* Creating drop down list */
+
+/*Hide the drop down*/
+.menu-wrap div .item .dropdown,
+.menu-wrap div .item input[type="checkbox"]
+{
+    display: none;
+}
+
+/*Show the drop down*/
+.menu-wrap div .item input:checked ~ ul{
+    display: block;
+    
+}
+
+/*Animate arrow when drop down is checked*/
+.menu-wrap div .item input:checked ~ .arrow-down{
+    transform:rotate(45deg);
+    transition: .5s;
+}
 
 
 /*Menu Layout*/
 .navbar-wrap .menu-wrap div ul li{
     list-style-type: none;
-    padding: .5rem;
+    padding: 0.5rem;
+    font-size: 0.75em;
 }
 
 .navbar-wrap .menu-wrap div ul li a{
@@ -144,7 +164,6 @@ i{
     -webkit-tap-highlight-color: transparent;
 
 }
-
 
     
 
