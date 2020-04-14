@@ -19,13 +19,14 @@ i{
     transform:rotate(-45deg);
 }
 
-/*.logo{
-    background: url("moo-logo.png") no-repeat cover cover/center;
+.logo{
+    background: url("moomm-logo.png") no-repeat center center/cover;
     display: inline-block;
     z-index:2;
     height:60px;
     width:200px;
-} */
+    -webkit-tap-highlight-color: transparent;
+}
 
 .navbar-wrap{
     position:fixed;
@@ -106,7 +107,7 @@ i{
 
 /* Show Menu */
 .navbar-wrap .menu-wrap{
-    background-color: rgba(41, 79, 117, 0.75);
+    background-color: #FFF;
     position: absolute;
     top:0;
     right: -100vw;
@@ -115,7 +116,8 @@ i{
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     transition: 0.5s;
-    padding: 2.5rem;
+    padding-top: 5rem;
+    padding-left: 1rem;
     font-size: 2em;
 
 }
@@ -136,18 +138,24 @@ i{
 
 /*Show the drop down*/
 .menu-wrap div .item input:checked ~ ul{
-    display: block;
-    
+    display: block;   
+    transition: 0.3s ease-in-out;
 }
 
-/*Animate arrow when drop down is checked*/
+/*Effects when clicked*/
 .menu-wrap div .item input:checked ~ .arrow-down{
     transform:rotate(45deg);
-    transition: .5s;
+    border-color: #4195eb;
+}
+
+.menu-wrap div .item input:checked ~ label{
+    color:#4195eb;
 }
 
 
-/*Menu Layout*/
+
+
+/*Inside Menu Layout*/
 .navbar-wrap .menu-wrap div ul li{
     list-style-type: none;
     padding: 0.5rem;
@@ -160,7 +168,7 @@ i{
 }
 
 .navbar-wrap .menu-wrap div ul li a:active{
-    color: rgb(37, 70, 160);
+    color: #4195eb;
     -webkit-tap-highlight-color: transparent;
 
 }
