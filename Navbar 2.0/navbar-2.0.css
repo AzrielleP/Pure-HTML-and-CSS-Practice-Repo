@@ -13,7 +13,6 @@ body{
 .arrow-down{
     border: solid black;
     display: inline-block;
-    padding: 7px;
     margin: 3px;
     border-width: 0 2px 2px 0;
     transform:rotate(-45deg);
@@ -29,105 +28,6 @@ body{
     -webkit-tap-highlight-color: transparent;
 }
 
-.navbar-wrap{
-    position:fixed;
-    top:0;
-    right:0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    width: 100vw;
-}
-
-/*Preparing the burger*/
-.navbar-wrap .burger-toggle{
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: 2;
-    width: 60px;
-    height:60px;
-    opacity:0;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.navbar-wrap .burger{
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*Hamburger Icon Creation*/
-.navbar-wrap .burger > div{
-    position: relative;
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-    
-}
-
-.navbar-wrap .burger > div:before,
-.navbar-wrap .burger > div:after{
-    content:'';
-    width:100%;
-    height:3px;
-    top: -10px;
-    background: inherit;
-    position:absolute;
-}
-
-.navbar-wrap .burger > div:after{
-    top: 10px;
-}
-
-/*Hamburger icon becomes X*/
-.navbar-wrap .burger-toggle:checked + .burger > div:before,
-.navbar-wrap .burger-toggle:checked + .burger > div:after{
-    transform:rotate(-90deg);
-    top:0;
-}
-
-.navbar-wrap .burger-toggle:checked + .burger > div{
-    transform:rotate(-45deg);
-    top:0;
-
-}
-
-/* Show the Menu */
-.navbar-wrap .menu-wrap{
-    background-color: #FFF;
-    position: absolute;
-    top:0;
-    right: -100vw;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    transition: 0.5s;
-    padding-top: 5rem;
-    padding-left: 1rem;
-    font-size: 2em;
-
-}
-
-.navbar-wrap .burger-toggle:checked ~ .menu-wrap{
-    right:0;
-    transition: 0.5s;
-}
-
 /* Creating drop down list */
 
 /*Hide the drop down*/
@@ -138,9 +38,9 @@ body{
 }
 
 /*Show the drop down*/
-.menu-wrap div .item input:checked ~ ul{
+.menu-wrap div .item input:checked ~ .dropdown{
     display: block;   
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
 /*Effect when clicked*/
@@ -153,51 +53,206 @@ body{
     color:#4195eb;
 }
 
-/*Inside Menu Layout*/
-.navbar-wrap .menu-wrap div ul li{
-    list-style-type: none;
-    padding: 0.5rem;
-    font-size: 0.75em;
+.navbar-wrap{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+    background-color: #FFF;
+    border-bottom: solid 1px #ccc;
 }
 
-.navbar-wrap .menu-wrap div ul li a{
-    text-decoration: none;
-    color: #000;
+/*For screens smaller than iPad*/
+
+@media screen and (max-width:849px){
+    /*Preparing the burger*/
+    .navbar-wrap .burger-toggle{
+        position: absolute;
+        top: 0;
+        right:0;
+        z-index: 2;
+        width: 60px;
+        height:60px;
+        opacity:0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .navbar-wrap .burger{
+        position: absolute;
+        top: 0;
+        right:0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Hamburger Icon Creation*/
+    .navbar-wrap .burger > div{
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        
+    }
+
+    .navbar-wrap .burger > div:before,
+    .navbar-wrap .burger > div:after{
+        content:'';
+        width:100%;
+        height:3px;
+        top: -10px;
+        background: inherit;
+        position:absolute;
+    }
+
+    .navbar-wrap .burger > div:after{
+        top: 10px;
+    }
+
+    /*Hamburger icon becomes X*/
+    .navbar-wrap .burger-toggle:checked + .burger > div:before,
+    .navbar-wrap .burger-toggle:checked + .burger > div:after{
+        transform:rotate(-90deg);
+        top:0;
+    }
+
+    .navbar-wrap .burger-toggle:checked + .burger > div{
+        transform:rotate(-45deg);
+        top:0;
+
+    }
+
+    /* Show the Menu */
+    .navbar-wrap .menu-wrap{
+        background-color: #FFF;
+        position: absolute;
+        top:0;
+        right: -100vw;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        transition: 0.5s;
+        padding-top: 5rem;
+        padding-left: 1rem;
+        font-size: 2em;
+
+    }
+
+    .navbar-wrap .burger-toggle:checked ~ .menu-wrap{
+        right:0;
+        transition: 0.5s;
+    }
+
+    /*Inside Menu Layout*/
+    .navbar-wrap .menu-wrap div ul li{
+        list-style-type: none;
+        padding: 0.5rem;
+        font-size: 0.75em;
+    }
+
+    .navbar-wrap .menu-wrap div ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .navbar-wrap .menu-wrap div ul li a:active{
+        color: #4195eb;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .arrow-down{
+        padding:7px;
+    }
+    
+
 }
 
-.navbar-wrap .menu-wrap div ul li a:active{
-    color: #4195eb;
-    -webkit-tap-highlight-color: transparent;
+/* Larger screens */
+@media screen and (min-width:850px){
+    /*Hide the burger icon*/
+    .burger-toggle, .burger{
+        visibility: hidden;
+    }
 
-}
+    /*Fix positioning of elements*/
+    .navbar-wrap .menu-wrap div{
+        display: inline-block;
+    
+    }
 
-/* Search bar */
-.searchContainer {
-    position: relative;
-    border-radius: 5px;
-    overflow: hidden;
-    right: 70px;
-    z-index: 2;
-  }
+    .navbar-wrap .menu-wrap .item{
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 1.5em;
+    }
 
-  .searchBox{
-    border: 0;
-    padding: 0.5rem 0.5rem 0.5rem 0;
-    flex: 1;
-    text-align: right;
-    border-bottom: 1px solid #ccc;
-  
-  }
+    /*Menu Layout*/
+    .navbar-wrap .menu-wrap .item:hover,
+    .navbar-wrap .menu-wrap div ul li a:hover{
+        color: #4195eb;
+    }
 
-  .search-icon{
-      height: 20px;
-      width: 20px;
-  }
+    .navbar-wrap .menu-wrap ul{
+        position: absolute;
+        top: 60px;
+        background-color: #FFF;
+        min-width: 10rem;
 
-  .searchContainer input:focus{
-    outline: none;
-  }
+        
+    }
 
+    .navbar-wrap .menu-wrap ul li{
+        position: relative;
+        background-color: #FFF;
+        
+    }
 
     
+    .navbar-wrap .menu-wrap div ul li{
+        list-style-type: none;
+        padding: 0.5rem;
+        font-size: .75em;
+    }
+
+    .navbar-wrap .menu-wrap div ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .navbar-wrap .menu-wrap div ul li a:active{
+        color: #1c5288;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .arrow-down{
+        padding:4px;
+    }
+    
+}
+
+/*Test if navbar is good to go */
+p {
+    font-size: 10rem;
+    margin: 1rem;
+    overflow: hidden;
+
+  }
 
