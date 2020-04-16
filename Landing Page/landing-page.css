@@ -186,14 +186,8 @@ form .download-button:focus{
         border-radius: 10px;
     }
 
-    main .what-we-offer div{
+    main .what-we-offer > div{
         display: flex;
     }
-
-    main .what-we-offer div figcaption{
-        flex-flow: column;
-        justify-content: center;
-
-
 
 }
