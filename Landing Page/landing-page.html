@@ -1,0 +1,125 @@
+<!-- I copied this website from this link
+
+http://ism.industrialstrengthmarketing.com/responsive-website-guide
+
+I only used this to practice HTML and CSS.-->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+
+    <title>
+    First Landing Page with Footer
+    </title>
+
+    <link rel = "stylesheet" href = "landing-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href ="">
+            <img src = "https://ism.industrialstrengthmarketing.com/hubfs/email/logos/industrial-logo-20h-light.png">
+            </a>
+        </header>
+        <main>
+            
+            <section class = "main-saying">
+                <div class="sub-container">
+                    <h1>Don't Make Me Zoom</h1>
+                    <h2>7 Reasons Industrials and B2Bs Need Responsive Websites</h2>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img src = "http://ism.industrialstrengthmarketing.com/hs-fs/hubfs/landing-page/Responsive_Website_Guide/images/main-image.png?width=512&height=356&name=main-image.png" class = "devices-image">
+                </div>  
+                <form>
+                    <h3>Complete the Form to Get Your Free Guide</h3>
+
+                    <div id = "first-name">
+                        <label for = "first-name">
+                            First Name 
+                            <strong>*</strong>
+                        </label>
+                        <input type = "text" id = "name" name = "first-name" required>
+                    </div>
+                    <div id = "last-name">
+                        <label for = "last-name">
+                            Last Name 
+                            <strong>*</strong>
+                        </label>
+                        <input type = "text" id = "name" name = "last-name" required>
+                    </div>
+                    <div id = "company-email">
+                        <label for = "company-email">
+                            Company Email
+                            <strong>*</strong>
+                        </label>
+                        <input type = "email" id = "email" name = "company-email" required>
+                    </div>
+                    <div id = "company-name">
+                        <label for = "company-name">
+                            Company Name
+                            <strong>*</strong>
+                        </label>
+                        <input type = "text" id = "company-name" name = "company-name" required>
+                    </div>
+                    <div id = "website-url">
+                        <label for = "website-url">
+                            Website URL
+                            <strong>*</strong>
+                        </label>
+                        <input type = "url" id = "website-url" name = "website-url" placeholder ="Enter full URL" required>
+                    </div>
+                    <div id = "company-type">
+                        <label for = "company-type">
+                            Company Type
+                            <strong>*</strong>
+                        </label>
+                        <select id = "type" name = "company-type">
+                            <option value="" disabled selected hidden>-Please Select-</option>
+                            <option>Manufacturer</option>
+                            <option>Distributor</option>
+                            <option>Logistics</option>
+                            <option>Industrial Services</option>
+                            <option>Agency</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button class = "download-button">Download Your Guide</button>
+                </form>
+            </section>
+            <section class = "what-we-offer">
+                <h3>A definitive primer for industrials and B2Bs who need a mobile-friendly website
+                </h3>
+                <div class="picture-container">
+                    <img src = "http://ism.industrialstrengthmarketing.com/hubfs/landing-page/Responsive_Website_Guide/images/enhance.png">
+                    <div class="text-container">Find out how responsive websites enhance users' experience.</div>
+                </div>
+                <div class="picture-container">
+                    <img src = "http://ism.industrialstrengthmarketing.com/hubfs/landing-page/Responsive_Website_Guide/images/conversion.png">
+                    <div class="text-container">Learn how responsive websites can dramatically boost conversations.</div>
+                </div>
+                <div class="picture-container">
+                    <img src = "http://ism.industrialstrengthmarketing.com/hubfs/landing-page/Responsive_Website_Guide/images/seo.png">
+                    <div class="text-container">See how responsive design improves SEO and streamline analytics.</div>
+                </div>
+                </section>  
+        </main>
+        <footer>
+            <p>Copyright &copy; 2020</p> 
+            <p class = "company-name">Industrial Strength Marketing. </p>
+            <p>All Rights Reserved. <a href = "">Privacy Policy</a></p>
+            <p>Call Us: <span class ="contact-number">1-866-529-8908</span></p>
+        </footer>
+    </div>
+
+
+
+</body>
+    
+</html>
