@@ -110,6 +110,7 @@ main .what-we-offer img{
 
 form{
     padding: 2rem;
+    background-color: #FFF;
 }
 
 form strong{
@@ -155,7 +156,44 @@ form .download-button:focus{
 
 
 
-/*For screens smaller than an iPad*/
-@media screen and (max-width:840px){
+/*For screens larger than or equal to iPad's*/
+@media screen and (min-width:768px){
+
+    footer{
+        text-align: left;
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (min-width:950px){
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    main .main-saying{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .sub-container{
+        padding: 2rem;
+    }
+
+    main form{
+        width: 50vw;
+        border-radius: 10px;
+    }
+
+    main .what-we-offer div{
+        display: flex;
+    }
+
+    main .what-we-offer div figcaption{
+        flex-flow: column;
+        justify-content: center;
+
+
 
 }
