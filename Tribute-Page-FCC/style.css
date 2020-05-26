@@ -1,127 +1,122 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    margin: 1em;
-    padding: .7em;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 1em;
+  padding: 0.7em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font: 18px/1.5 "Roboto", sans serif;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font: 1.2em "Roboto Slab", sans-serif;
+  text-align: center;
+}
+
+.subtitle {
+  font: 16px "Roboto Slab", sans-serif;
+  font-weight: lighter;
+}
+
+.image-container {
+  height: 30vh;
+  width: 100%;
+  background: center / contain no-repeat url("groupic_s.jpg");
+  padding: 0;
+  margin: 0;
+}
+
+.caption {
+  font-weight: lighter;
+  padding-top: 0.5em;
+  font-size: 12px;
+  text-align: center;
+}
+
+.content-title {
+  font-size: 22px;
+}
+section {
+  padding: 1rem;
+}
+
+li {
+  padding: 0.3rem;
+}
+
+li span {
+  font-weight: bold;
+  color: rgb(163, 49, 49);
+}
+
+.quote {
+  display: block;
+  padding: 1rem;
+  margin-top: 1em;
+  background: #cccccc;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quoter {
+  display: block;
+  font-weight: lighter;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(218, 216, 216);
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  color: rgb(126, 126, 126);
+  -webkit-tap-highlight-color: transparent;
+}
+
+footer a:focus {
+  color: rgb(163, 49, 49);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 4rem;
   }
 
-  body{
-      font: 18px "Roboto", sans serif;
-      line-height: 1.5; 
-      margin: 0;
-      padding: 0;
-
+  .subtitle {
+    font-size: 2rem;
   }
-
-  .title{
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  .subtitle{
-      font-size: 16px;
-      font-weight: lighter;
-      font-family: "Roboto Slab", sans-serif;
-  }
-
-  .image-container{
-    height: 30vh;
+  .image-container {
+    height: 35vh;
     width: 100%;
-    background: center / contain no-repeat url("groupic_s.jpg");
-    padding: 0;
-    margin: 0;
+    background: center / contain no-repeat url("groupic.jpg");
   }
 
-  figcaption{
-      font-weight: lighter;
-      padding-top: 0.5em;
-      font-size: 12px;
-      text-align: center;
-  }
-
-  .content-title{
-      font-size:22px;
-  }
-  section{
-      padding: 1rem;
-  }
-
-  li{
-      padding: 0.3rem;
-  }
-
-  li span{
-      font-weight: bold;
-      color: rgb(163, 49, 49);
-  }
-
-  .quote{
-      display: block;
-      padding: 1rem;
-      margin-top: 1em;
-        background: #CCCCCC;
-      font-style: italic;
-      font-weight: bold;
-  }
-
-  .quoter{
-      display: block;
-      font-weight: lighter;
-  }
-
-  footer{
-      text-align: center;
-      background-color:rgb(218, 216, 216);
-      padding: 1em;
-  }
-
-  footer a{
-      text-decoration: none;
-      color: inherit;
-      color: rgb(126, 126, 126);
-      -webkit-tap-highlight-color: transparent;
-  }
-
-  footer a:focus{
-      color: rgb(163, 49, 49);
-  }
-
-  @media screen and (min-width: 768px) {
-    .title{
-        font-size: 4rem;
-    }
-
-    .subtitle{
-        font-size: 2rem;
-    }
-    .image-container{
-        height: 35vh;
-        width: 100%;
-        background: center / contain no-repeat url("groupic.jpg");
-      }
-
-    main{
-        width: 80vw;
-        padding: 2rem;
+  main {
+    width: 80vw;
+    padding: 2rem;
   }
 }
 
-  @media screen and (min-width: 1025px){
-    .image-container{
-        height: 60vh;
+@media screen and (min-width: 1025px) {
+  .image-container {
+    height: 60vh;
   }
 
-  footer a:hover{
-      text-decoration: underline;
+  footer a:hover {
+    text-decoration: underline;
   }
 }
-
